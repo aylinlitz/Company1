@@ -1,4 +1,3 @@
-
 package ec.edu.espoch.company1;
 
 public class Route {
@@ -12,13 +11,13 @@ public class Route {
     private Vehicle vehicle;
 
     public Route() {
-        this.date = "    ";
-        this.deliveryArea = "    ";
-        this.distanceTraveled = 0;
-        this.packagesTransported = 0;
-        this.estimatedTripTime = 0;
-        this.driver = null;
-        this.vehicle = null;
+        this.date;
+        this.deliveryArea;
+        this.distanceTraveled;
+        this.packagesTransported;
+        this.estimatedTripTime;
+        this.driver;
+        this.vehicle;
     }
 
     public Route(String date, String deliveryArea, double distanceTraveled, int packagesTransported, double estimatedTripTime, Driver driver, Vehicle vehicle) {
@@ -31,43 +30,13 @@ public class Route {
         this.vehicle = vehicle;
     }
 
-    
-    public String Date() {
-        return date;
-    }
-
-    public String DeliveryArea() {
-        return deliveryArea;
-    }
-
-    public double DistanceTraveled() {
-        return distanceTraveled;
-    }
-
-    public int PackagesTransported() {
-        return packagesTransported;
-    }
-
-    public double EstimatedTripTime() {
-        return estimatedTripTime;
-    }
-
-    public Driver Driver() {
-        return driver;
-    }
-
-    public Vehicle Vehicle() {
-        return vehicle;
-    }
-
-    public void showInfo() {
+    public double showInfo() {
         System.out.println("Date: " + date);
         System.out.println("Delivery Area: " + deliveryArea);
         System.out.println("Distance Traveled: " + distanceTraveled + " km");
         System.out.println("Packages Transported: " + packagesTransported);
         System.out.println("Estimated Trip Time: " + estimatedTripTime + " hours");
-        System.out.println("Driver: " + driver.FullName());
-        System.out.println("Vehicle: " + vehicle.InternalCode() + " - " + vehicle.LicensePlate());
+
     }
 }
-
+}

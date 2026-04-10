@@ -10,9 +10,9 @@ public class Driver {
 
     public Driver() {
         this.firstName = "  ";
-        this.lastName = "    ";
-        this.idNumber = "    ";
-        this.licenseNumber = "   ";
+        this.lastName = "  ";
+        this.idNumber = "  ";
+        this.licenseNumber = "  ";
         this.yearsOfExperience = 0;
     }
 
@@ -23,7 +23,6 @@ public class Driver {
         this.licenseNumber = licenseNumber;
         this.yearsOfExperience = yearsOfExperience;
     }
-
 
     public String FirstName() {
         return firstName;
@@ -56,5 +55,4 @@ public class Driver {
         System.out.println("License Number: " + licenseNumber);
         System.out.println("Years of Experience: " + yearsOfExperience);
     }
-}
 }

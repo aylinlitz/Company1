@@ -1,4 +1,3 @@
-
 package ec.edu.espoch.company1;
 
 public class Vehicle {
@@ -12,66 +11,23 @@ public class Vehicle {
     private double totalDistance;
 
     public Vehicle() {
-        this.internalCode = "";
-        this.licensePlate = "";
-        this.brand = "";
-        this.maxLoadCapacity = 0;
-        this.batteryLevel = 100;
-        this.status = "OFF";
-        this.totalDistance = 0;
+        this.internalCode;
+        this.licensePlate;
+        this.brand;
+        this.maxLoadCapacity;
+        this.batteryLevel;
+        this.status;
+        this.totalDistance;
     }
 
     public Vehicle(String internalCode, String licensePlate, String brand, double maxLoadCapacity, double batteryLevel, String status, double totalDistance) {
-        this.internalCode = internalCode;
-        this.licensePlate = licensePlate;
+        this.internalCode;
+        this.licensePlate;
         this.brand = brand;
-        this.maxLoadCapacity = maxLoadCapacity;
-        this.batteryLevel = batteryLevel;
-        this.status = status;
-        this.totalDistance = totalDistance;
-    }
-
-
-    public String InternalCode() {
-        return internalCode;
-    }
-
-    public String LicensePlate() {
-        return licensePlate;
-    }
-
-    public String Brand() {
-        return brand;
-    }
-
-    public double MaxLoadCapacity() {
-        return maxLoadCapacity;
-    }
-
-    public double BatteryLevel() {
-        return batteryLevel;
-    }
-
-    public String Status() {
-        return status;
-    }
-
-    public double TotalDistance() {
-        return totalDistance;
-    }
-
-    public void Status(String status) {
-        this.status = status;
-    }
-
-    public void setBatteryLevel(double batteryLevel) {
-        if (batteryLevel < 0) {
-            this.batteryLevel = 0;
-        } else if (batteryLevel > 100) {
-            this.batteryLevel = 100;
-        } else {
-            this.batteryLevel = batteryLevel;
-        }
+        this.maxLoadCapacity;
+        this.batteryLevel;
+        this.status;
+        this.totalDistance;
     }
 
     public void addDistance(double distance) {
@@ -89,14 +45,11 @@ public class Vehicle {
         setBatteryLevel(batteryLevel - consumption);
     }
 
-    public void showInfo() {
-        System.out.println("Internal Code: " + internalCode);
-        System.out.println("License Plate: " + licensePlate);
-        System.out.println("Brand: " + brand);
-        System.out.println("Max Load Capacity: " + maxLoadCapacity);
-        System.out.println("Battery Level: " + batteryLevel + "%");
-        System.out.println("Status: " + status);
-        System.out.println("Total Distance: " + totalDistance + " km");
+    public void double () {
+
+        System.out.println("internalCode" + internalCode);
+        System.out.println("internalCode" + internalCode);
+        System.out.println("internalCode" + internalCode);
+
     }
 }
-
